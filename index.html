@@ -16,7 +16,7 @@
 <body>
     <div class="container-fluid">
         <div class="alert alert-secondary" role="alert">
-            <h1 class="text-center py-3">TITLE HERE</h1>
+            <h1 class="text-center py-3">JavaScript Thing</h1>
         </div>
     </div>
 
@@ -27,38 +27,36 @@
             <div class="col-sm p-3 bg-secondary text-white">
                 <h1 class="display-5 text-center">TO DO</h1>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder=" Enter Task to Complete" aria-label="task" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control" placeholder=" Enter Task to Complete" aria-label="task" aria-describedby="basic-addon2"  id="doInput">
                     <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">Add to List</span>
+                            <button class="btn btn-dark" id="doBtn">Add to List</button>
                     </div>
                 </div>
-                <ul>
-                    <li>habitant</li>
-                    <li>morbi</li>
-                    <li>tristique</li>
-                    <li>senectus</li>
-                    <li>ipsum</li>
-                    <li>orci</li>
-                    <li>rhoncus</li>
+                <ul  id="doList">
+                    <li>clean kitchen</li>
+                    <li>cut grass</li>
+                    <li>ball hard</li>
                 </ul>
 
             </div>
             <!-- /End TO DO-->
 
-            <div class="col-sm p-3 bg-dark text-white">
+            <div class="col-sm p-3 bg-light text-secondary">
                 <!-- TO BUY -->
                 <h1 class="display-5 text-center">TO BUY</h1>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Enter Item to Buy" aria-label="Enter Item Needed" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control" placeholder="Enter Item to Buy" aria-label="Enter Item Needed" aria-describedby="basic-addon2" id="buyInput">
                     <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">Add to List</span>
+                            <button class="btn btn-secondary" id="buyBtn">Add to List</button>
                     </div>
                 </div>
-                <ul>
-                    <li>morbi</li>
-                    <li>orci</li>
-                    <li>rhoncus</li>
-                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">space heater</li>
+                    <li class="list-group-item">lettuce</li>
+                    <li class="list-group-item">all the drugs</li>
+                    <li class="list-group-item">dope nike shoes</li>
+                    <li class="list-group-item">dualshock 4</li>
+                  </ul>
             </div>
 
             <!-- End TO BUY -->
