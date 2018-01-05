@@ -15,48 +15,48 @@
 
 <body>
     <div class="container-fluid">
-        <div class="alert alert-secondary" role="alert">
-            <h1 class="text-center py-3">JavaScript Thing</h1>
-        </div>
+        
+            <h1 class="text-center py-3">JavaScript To Do List Thing</h1>
+        
     </div>
 
     <div class="container">
 
         <div class="row">
             <!-- TO DO -->
-            <div class="col-sm p-3 bg-secondary text-white">
-                <h1 class="display-5 text-center">TO DO</h1>
+            <div class="col-sm p-3 bg-secondary text-secondary">
+                <h1 class="display-5 text-dark text-center">Tasks to Complete</h1>
+
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder=" Enter Task to Complete" aria-label="task" aria-describedby="basic-addon2"  id="doInput">
+                    <input type="text" class="form-control" placeholder=" Enter Task to Complete" aria-label="task" aria-describedby="basic-addon2"
+                        id="doInput">
                     <div class="input-group-append">
-                            <button class="btn btn-dark" id="doBtn">Add to List</button>
-                    </div>
+                        <button class="btn btn-dark" id="doBtn">Add to List</button>
+                    </div>                   
                 </div>
-                <ul  id="doList">
-                    <li>clean kitchen</li>
-                    <li>cut grass</li>
-                    <li>ball hard</li>
+                <div class="alert alert-danger" role="alert">
+                    PLEASE ENTER A TASK THAT NEEDS DOING
+                  </div>
+                
+                <ul class="list-group" id="doList">
+                    <button type="button" class="list-group-item list-group-item-action">clean kitchen</button>
+                    <button type="button" class="list-group-item list-group-item-action">pick up baby</button>
+                    <button type="button" class="list-group-item list-group-item-action">learn javaScript</button>
+                    <button type="button" class="list-group-item list-group-item-action">cut back yard</button>
+                    <button type="button" class="list-group-item list-group-item-action">play yakuza</button>                
                 </ul>
+               
 
             </div>
             <!-- /End TO DO-->
 
             <div class="col-sm p-3 bg-light text-secondary">
-                <!-- TO BUY -->
-                <h1 class="display-5 text-center">TO BUY</h1>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Enter Item to Buy" aria-label="Enter Item Needed" aria-describedby="basic-addon2" id="buyInput">
-                    <div class="input-group-append">
-                            <button class="btn btn-secondary" id="buyBtn">Add to List</button>
-                    </div>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">space heater</li>
-                    <li class="list-group-item">lettuce</li>
-                    <li class="list-group-item">all the drugs</li>
-                    <li class="list-group-item">dope nike shoes</li>
-                    <li class="list-group-item">dualshock 4</li>
-                  </ul>
+                <!-- Finished Tasks -->
+                <h1 class="display-5 text-center">Finished Task(s)</h1>
+                <ul class="list-group" id="doneList">
+                    <!-- complete tasks buttons end up here -->
+                </ul>
+            
             </div>
 
             <!-- End TO BUY -->
