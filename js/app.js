@@ -12,28 +12,17 @@ $("#doBtn").on( "click", function()
       document.querySelector('#doInput').value = "";
   });
 
-$('#doList').on("click", function()
+$('.list-group-item').on("click", function()
 {
   console.log("taskText = " + taskText);
   taskText = this.textContent;
   //taskText = document.querySelector(this).textContent;
   console.log("after taskText = " + taskText);
-
-
+  //crate btn
   let btn = document.createElement('button');
   btn.setAttribute("class", "list-group-item list-group-item-action");
-  btn.textContent = "work damnit";
+  btn.textContent = taskText;
   $('#doneList').append(btn);
 });
 
-//<button type="button" class="list-group-item list-group-item-action">clean kitchen in</button>
-
-  $("#buyBtn").on( "click", function() {
-    console.log( "button press" );
-    let li = document.createElement('li');
-    li.setAttribute("class", "list-group-item");
-    li.textContent = document.querySelector('#buyInput').value;
-    $('#buyList').append(li);
-    document.querySelector('#buyInput').value = "";
-  });
 
